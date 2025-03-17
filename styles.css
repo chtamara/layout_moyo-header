@@ -69,5 +69,5 @@ html, body {
 
 /* Hover-эффект */
 .nav-list a:hover {
-  color: blue;
+  color: var(--primary-blue);
 }
