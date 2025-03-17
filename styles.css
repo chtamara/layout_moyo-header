@@ -1,0 +1,71 @@
+/* Сброс отступов */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 80px; /* Фиксированная высота */
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 1200px;
+}
+
+.logo img {
+  height: 50px;
+}
+
+.nav-list {
+  display: flex;
+  list-style: none;
+}
+
+.nav-list li {
+  margin-right: 20px;
+}
+
+.nav-list li:last-child {
+  margin-right: 0;
+}
+
+.nav-list a {
+  text-decoration: none;
+  color: black;
+  text-transform: uppercase;
+  position: relative;
+  padding: 10px;
+}
+
+/* Стили для активной ссылки */
+.nav-list .is-active {
+  color: blue;
+}
+
+/* Псевдоэлемент для синей линии под активной ссылкой */
+.nav-list .is-active::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 100%;
+  height: 2px;
+  background-color: blue;
+}
+
+/* Hover-эффект */
+.nav-list a:hover {
+  color: blue;
+}
