@@ -1,11 +1,11 @@
 /* Сброс отступов */
-* {
+html, body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-body {
+.page {
   font-family: 'Roboto', sans-serif;
 }
 
@@ -48,10 +48,12 @@ body {
   position: relative;
   padding: 10px;
 }
-
+:root {
+  --primary-blue: blue;
+}
 /* Стили для активной ссылки */
 .nav-list .is-active {
-  color: blue;
+  color:var(--primary-blue);
 }
 
 /* Псевдоэлемент для синей линии под активной ссылкой */
@@ -62,7 +64,7 @@ body {
   bottom: -5px;
   width: 100%;
   height: 2px;
-  background-color: blue;
+  background-color: var(--primary-blue);
 }
 
 /* Hover-эффект */
